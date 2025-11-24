@@ -74,11 +74,11 @@ class Ball(
 
         if (posY < 0) {
             posY = 0f
-            velocityY = -velocityY + 0.5f
+            velocityY = 0f
             accY = 0f
         } else if (posY + ballSize > backgroundHeight) {
             posY = backgroundHeight - ballSize
-            velocityY = -velocityY + 0.5f
+            velocityY = 0f
             accY = 0f
         }
     }
